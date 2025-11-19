@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar — Kesehatan Mental</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../auth.css">
+</head>
+<body>
+
+  <div class="auth-page" id="authPage">
+    <div class="auth-card shadow-sm p-5 p-lg-5">
+      <div class="d-flex justify-content-center mb-4">
+        <div class="brand d-flex align-items-center">
+          <i class="bi bi-heart-pulse-fill"></i>
+          <div class="ms-2">
+            <h5 class="mb-0">Kesehatan Mental</h5>
+            <small class="muted">Daftar sekarang</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <h1 class="display-6 fw-bold mb-2">Buat Akun</h1>
+        <p class="muted">Bergabunglah dengan komunitas kesehatan mental kami dalam beberapa langkah mudah.</p>
+      </div>
+
+      <form id="registerForm" class="auth-form mx-auto" novalidate>
+        <div class="mb-3">
+          <label class="form-label small fw-500">Nama Lengkap</label>
+          <input type="text" name="fullname" class="form-control" placeholder="Nama lengkap Anda" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label small fw-500">Email</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+            <input type="email" name="email" class="form-control" placeholder="name@company.com" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label small fw-500">Password</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+            <input id="regPassword" type="password" name="password" class="form-control" placeholder="Buat password" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label small fw-500">Konfirmasi Password</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+            <input id="regConfirm" type="password" name="confirm_password" class="form-control" placeholder="Konfirmasi password" required>
+          </div>
+          <div id="pwError" class="text-danger small mt-2" style="display:none;"><i class="bi bi-exclamation-circle"></i> Password tidak cocok.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg w-100">Daftar</button>
+        <div id="registerError" class="alert alert-danger mt-3" style="display:none;"></div>
+        <div id="registerLoading" class="text-center mt-3" style="display:none;">
+          <div class="spinner-border spinner-border-sm" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </form>
+
+      <div class="text-center mt-4">
+        <p class="small muted">Sudah punya akun? <a href="../login/login.html" class="btn btn-link p-0">Masuk</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="../api-handler.js"></script>
+  <script src="../auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+meta {
+  name: login user
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost/UTS/login.php
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "testuser@kesehatan.com",
+    "password": "password123"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

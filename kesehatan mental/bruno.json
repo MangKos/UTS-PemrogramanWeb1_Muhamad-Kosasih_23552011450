@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "kesehatan mental",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

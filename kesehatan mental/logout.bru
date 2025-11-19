@@ -1,0 +1,20 @@
+meta {
+  name: logout
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost/UTS/logout.php
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

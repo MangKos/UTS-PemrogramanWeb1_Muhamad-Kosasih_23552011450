@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Kesehatan Mental</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .dashboard-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .dashboard-header {
+      background: linear-gradient(135deg, #000000 0%, #0400ff 100%);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+    .dashboard-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .dashboard-content {
+      flex: 1;
+      padding: 3rem 0;
+    }
+    .dashboard-card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+      transition: 0.3s ease;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+    .dashboard-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(124, 58, 237, 0.15);
+    }
+    .dashboard-card i {
+      font-size: 2.5rem;
+      color: #7c3aed;
+      margin-bottom: 1rem;
+    }
+    .dashboard-card h4 {
+      color: #1f2937;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .dashboard-card p {
+      color: #6b7280;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .dashboard-footer {
+      background: #f3f4f6;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: auto;
+    }
+    .navbar-top {
+      background: linear-gradient(90deg, #5c5c5c 0%, #000000 100%);
+      padding: 1rem 0;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+    }
+    .user-info {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logout-btn {
+      background: rgba(15, 3, 3, 0.2);
+      border: 2px solid white;
+      color: white;
+      transition: 0.3s ease;
+    }
+    .logout-btn:hover {
+      background: white;
+      color: #7c3aed;
+      border-color: white;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (!localStorage.getItem('user')) {
+      window.location.href = '../Login/login.html';
+    }
+  </script>
+
+  <div class="dashboard-wrapper">
+    <!-- Top Navigation -->
+    <nav class="navbar-top">
+      <div class="container">
+        <div class="user-info">
+          <div style="flex: 1; text-align: left;">
+            <a href="../index.html" style="color: white; text-decoration: none; font-size: 1.4rem; font-weight: 700;">
+              <i class="bi bi-heart-pulse-fill"></i> Kesehatan Mental
+            </a>
+          </div>
+          <span id="userDisplay">👋 Halo, <strong id="userName">User</strong></span>
+          <button class="btn logout-btn btn-sm" onclick="logout()">Keluar</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+      <div class="container">
+        <h1>Menu Utama Kesehatan Mental</h1>
+        <p>Pilih layanan yang ingin Anda akses</p>
+      </div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-chat-dots"></i>
+              <h4>Konsultasi</h4>
+              <p>Berbicara dengan profesional kesehatan mental</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-book"></i>
+              <h4>Artikel</h4>
+              <p>Baca artikel kesehatan mental terbaru</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-graph-up"></i>
+              <h4>Progress</h4>
+              <p>Pantau perkembangan kesehatan Anda</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-gear"></i>
+              <h4>Pengaturan</h4>
+              <p>Kelola preferensi akun Anda</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-calendar-check"></i>
+              <h4>Jadwal</h4>
+              <p>Lihat jadwal konsultasi Anda</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-bell"></i>
+              <h4>Notifikasi</h4>
+              <p>Kelola pengaturan notifikasi</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-file-text"></i>
+              <h4>Laporan</h4>
+              <p>Akses laporan kesehatan mental Anda</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="dashboard-card">
+              <i class="bi bi-question-circle"></i>
+              <h4>Bantuan</h4>
+              <p>Hubungi tim dukungan kami</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+            <div class="text-center py-3">
+                <p>&capcup; 23552011450 - Muhamad kosasih</p>
+            </div>
+    </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Load user data
+    window.addEventListener('load', function() {
+      const user = localStorage.getItem('user');
+      if (user) {
+        const userData = JSON.parse(user);
+        document.getElementById('userName').textContent = userData.name || 'User';
+      }
+    });
+
+    function logout() {
+      if (confirm('Apakah Anda yakin ingin keluar?')) {
+        localStorage.removeItem('user');
+        window.location.href = '../index.html';
+      }
+    }
+  </script>
+</body>
+</html>
