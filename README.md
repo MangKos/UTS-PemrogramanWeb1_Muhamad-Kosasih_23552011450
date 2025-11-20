@@ -1,4 +1,4 @@
-# Tampilan dashboard
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/90eba440-8564-4b85-ab68-b4db4b777d91" /># Tampilan dashboard
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7c74cedc-02e3-4b01-9c1a-041000a4b806" />
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c8683455-b947-431d-b9cc-3e77ea869944" />
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/39fe737b-0b04-44ca-8e89-04f81dcf7d17" />
@@ -20,5 +20,8 @@
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7692f15b-0099-4c6f-8b58-8f2a26c77a8e" />
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b6343100-347c-4e49-91a8-6f5f13e2873a" />
 
+# tampilan di bruno
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8582a79d-0786-4e79-aa0a-1af04057f4ad" />
 
-
+# Tampilan di phpmyadmin
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/fb611d8a-8109-4276-91a3-0780f5eb7964" />
