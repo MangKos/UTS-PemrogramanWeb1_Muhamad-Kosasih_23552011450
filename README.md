@@ -1,4 +1,4 @@
-# PROJECT 1
+# * PROJECT 1 *
 
 # Tampilan dashboard
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7c74cedc-02e3-4b01-9c1a-041000a4b806" />
@@ -23,7 +23,7 @@
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b6343100-347c-4e49-91a8-6f5f13e2873a" />
 
 
-#PROJECT 2
+# * PROJECT 2 *
 
 # tampilan di bruno
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8582a79d-0786-4e79-aa0a-1af04057f4ad" />
