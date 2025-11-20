@@ -1,34 +1,3 @@
-# Struktur kode
-c:/xampp/htdocs/UTS/
-├── api-handler.js
-├── auth.css
-├── auth.js
-├── index.html
-├── login.php
-├── logout.php
-├── register.php
-├── script.js
-├── styles.css
-├── config/
-│   ├── database.php
-│   └── setup.php
-├── dashboard/
-│   ├── dashboard.html
-│   └── style.css
-├── image/
-│   ├── profil.jpg
-│   └── solusi.jpg
-├── kesehatan mental/
-│   ├── bruno.json
-│   ├── login invalid.bru
-│   ├── login user.bru
-│   ├── logout.bru
-│   └── register user.bru
-├── Login/
-│   └── login.html
-└── register/
-    └── register.html
-
 # PROJECT 1
 
 # Tampilan dashboard
