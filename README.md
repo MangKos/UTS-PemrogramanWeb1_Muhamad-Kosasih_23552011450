@@ -6,7 +6,9 @@
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/55307c4c-22a4-45c1-b402-435a638c268b" />
 
 # Tampilan detail informasi
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/fb5cd94d-16eb-481f-9bc3-98fcf6d4163d" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b6c07f8a-837a-48d3-abc8-c1168ef6b256" />
+# saya ambil satu contoh detail informasinya
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e623adda-2586-417b-9389-23f31c3c5be3" />
 
 # Tampilan Login
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/54bf324d-4ed0-442c-97f8-41319470f49f" />
